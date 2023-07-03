@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="center">
+        
+        <div class="panda">
+            <div class="hands">
+                <div class="hand left">' ' '</div>
+            <div class="hand right">' ' '</div>
+            </div>
+            <div class="eyes">
+                <div class="eye "><p class=" lefteye"></p></div>
+            <div class="eye "><p class=" righteye"></p></div>
+            </div>
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-tO979wUeOXewKA_CU63lMJAZpy23JRsSEA&usqp=CAU" alt="pandaimg">
+            
+        </div>
+        <form action="#">
+            <label>Username : </label>
+            <input type="text"  id="email" placeholder="example@gmail.com">
+            <label>Password : </label>
+            <input type="password"  id="password" placeholder="Password">
+            <input type="checkbox" id="checkbox" style="margin-left:-4rem;">
+            <label style="margin-left:-5.3rem;font-size:15px; line-height: 1rem;">Remember me</label><br><br>
+    <button type="button">Login</button>
+           </form>
+        <div class="feets">
+            <div class="feet "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jDZ6lbL4gGtM2Jeubx6PoevuTapkiPymzN0DQDgUp0r_o-qpK7UTymMzShmjAHtbdSU&usqp=CAU" alt="left feet"></div>
+            <div class="feet "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jDZ6lbL4gGtM2Jeubx6PoevuTapkiPymzN0DQDgUp0r_o-qpK7UTymMzShmjAHtbdSU&usqp=CAU" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let eyes = document.querySelector('.eyes')
+    let lefteye = document.querySelector('.lefteye');
+    let righteye = document.querySelector('.righteye');
+    let left = document.querySelector('.left');
+    let right = document.querySelector('.right');
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
+
+    email.addEventListener('mouseenter',function(){
+        lefteye.classList.add('leftball');
+        righteye.classList.add('rightball');
+        eyes.style.display =' flex'
+
+    })
+    email.addEventListener('mouseleave',function(){
+        lefteye.classList.remove('leftball');
+        righteye.classList.remove('rightball')
+        eyes.style.display =' none'
+
+    })
+
+    password.addEventListener('mouseenter',function(){
+        left.classList.add('lefthand');
+        left.classList.add('handslr');
+        right.classList.add('righthand');
+        right.classList.add('handslr');
+        eyes.style.display =' none'
+    })
+    password.addEventListener('mouseleave',function(){
+        left.classList.remove('lefthand');
+        left.classList.remove('handslr');
+        right.classList.remove('righthand');
+        right.classList.remove('handslr');
+    })
+    email.addEventListener('mouseenter',function(){
+      
+    })
+</script>
+</html>
+

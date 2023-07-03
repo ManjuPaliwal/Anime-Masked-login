@@ -1,0 +1,173 @@
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    width:450px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.panda{
+display: flex;
+justify-content: center;
+ mix-blend-mode: multiply;
+}
+form{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(209, 206, 206);
+    margin-top: -65px;
+    padding-top: 20px;
+}
+label{
+    font-size:larger;
+    margin-left: 1.7rem;
+    line-height: 5rem;
+}
+input{
+    border: none;
+    padding: 6px 3px;
+    width: 200px;
+    text-align: center;
+    color: #212a39;
+}
+button{
+   display: block;
+margin: auto;
+width: 170px;
+padding: 10px 25px ;
+font-size: medium;
+font-weight: bold;
+cursor: pointer;
+border-color: #212a39;
+background-color: transparent;
+border-radius: 4px;
+}
+button:hover{
+    background-color:#adb2b9;
+    color: #212a39;
+    
+}
+.feets{
+    width: 400px;;
+    display: flex;
+    justify-content: space-around;
+    mix-blend-mode:multiply;
+    position: absolute;
+    bottom: 120px;
+}
+.feet img{
+    width:75px;
+}
+
+.eyes{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+top: 110px;
+}
+.eye{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    /* color: white; */
+    /* text-align: center; */
+    padding: 1px;
+}
+ p{
+    position: absolute;
+    top: -10px;
+    width: 5px;
+    height: 10px;
+    border-radius: 40%;
+    background-color: white;
+}
+/* .eye{
+    position: absolute;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border-radius: 40%;
+    background-color: white;
+    /* animation: moveeye 1.5s infinite;} */
+
+.leftball{
+    rotate: 20deg;
+   left: 20px;
+   animation: moveleft 1.5s infinite;
+}
+.rightball{
+    rotate: -20deg;
+   right: 12px;
+   animation: moveright 1.5s infinite;
+
+}
+.hands{
+    width: 200px;
+    /* width: 150px; */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.hand{
+    /* position: absolute; */
+    width: 30px;
+    height: 20px;
+    /* height: 80px; */
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    background-color: rgba(0, 0, 0, 0.959);
+    position: relative;
+    top: 140px;
+    /* top: 130px; */
+    color: white;
+    text-align: center;
+    transition: .5s;
+}
+
+.handslr{
+    position: absolute; 
+    height: 80px;
+     top: 70px;
+}
+
+.lefthand{
+rotate: 80deg;
+left: 40px;
+}
+.righthand{
+    left: 130px;
+    rotate: -80deg;
+}
+
+@keyframes moveleft {
+    0%{
+        left: 25px;
+    }
+    50%{
+        left: 20px;
+    }
+    100%{
+        left: 25px;
+    }
+}
+@keyframes moveright {
+    0%{
+        right: 15px;
+    }
+    50%{
+        right: 20px;
+    }
+    100%{
+        right: 15px;
+    }
+}
